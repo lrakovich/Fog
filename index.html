@@ -1,0 +1,171 @@
+<!DOCTYPE html><html><head>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+</style>
+    
+    
+    
+   <script type="text/javascript"> 
+function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var x = new Date()
+var x1=x.toString();
+let str=x1;
+let short=str.replace("(Eastern Standard Time)"," ")
+document.getElementById('ct').innerHTML = short;
+tt=display_c();
+ }
+     
+
+   
+     
+     
+</script>
+    
+    
+    
+    
+    
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+
+    <!-- Generative Design Dependencies here -->
+    <!-- GG Bundled -->
+    <script src="gg-dep-bundle.js"></script>
+    <!-- Opentype -->
+    <script src="opentype.min.js"></script>
+    <!-- Rita -->
+    <script src="rita-small.min.js"></script>
+    <!-- Chroma -->
+    <script src="chroma.min.js"></script>
+    <!-- Jquery -->
+    <script src="jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- sketch additions -->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body onload="display_ct();">
+
+    <!-- main -->
+    <script src="sketch.js"></script>
+    
+     
+    
+    
+    
+    
+   
+       
+<!------------------------CONTENT----------------------------------->  
+       
+ 
+       
+<div class="box">
+  
+   <div class="date">
+  <span id="ct"></span>  
+   </div> 
+  
+  
+   <div class="weather">
+ WEATHER: <a href="javascript:openInfo()">HEAVY FOG</a> 
+  </div>
+  
+  <div class="signal">
+    SIGNAL: WEAK
+  </div>
+  
+  
+<div class="instruction">
+   USE THE ARROW KEYS ON YOUR KEYBOARD TO NAVIGATE THE LANDSCAPE
+</div> 
+  
+  <div class="playsound">AUDIO FEED:
+   <a href="javascript:sound.loop()">ON </a>/
+   <a href="javascript:sound.pause()">OFF</a>
+  </div>
+  
+  
+    <div id="info">
+     i  <br><br>
+  1. Be careful.<br>
+2. Things change fast in the fog. An area seen a moment ago will look different on second glance.<br>
+3. The fog transforms the landscape, simultaneously bringing us closer to it and pulling it out of our reach.<br>
+    </div>
+  
+  
+  
+ <div class="arrow-down">
+   &gt;
+  </div> 
+  
+  
+  <div class="arrow-right">
+   &gt; 
+  </div> 
+  
+   <div class="arrow-up">
+   &gt; 
+  </div> 
+  
+  
+    <div class="arrow-left">
+   &gt;
+  </div> 
+  
+  
+       </div>       
+       
+       
+    
+
+   
+<div id="flex-middle"></div> 
+       
+   
+
+       
+       
+          
+<div class="box-large">
+ <!------- <div class="decorative-text">
+<img src="Assets/TitleDarker.svg"  height=100%
+    />
+       </div> 
+  -----> 
+  
+ 
+  
+</div>       
+
+      
+  
+    
+  
+       
+       
+       
+  
+  
+     
+  
+       
+       
+   
+ 
+        
+  
+  
+  
+
+
+
+
+</body></html>
